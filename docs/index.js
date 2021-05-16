@@ -17,7 +17,7 @@ async function main(origin) {
         if (site.ipv6) {
             li.textContent = site.domain + ' ✓'
         } else {
-            li.textContent = site.domain + ' 🗙'
+            li.textContent = site.domain + ' ✕'
 
         }
 
