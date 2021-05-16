@@ -63,7 +63,10 @@ func computeIPV6(sites []string) ([]site, error) {
 		conn, err := net.Dial("tcp6", site+":80")
 
 		if err != nil {
-			continue
+			conn, err = net.Dial("tcp6", site+":443")
+			if err != nil {
+				continue
+			}
 		}
 
 		result[i].IPV6 = true
