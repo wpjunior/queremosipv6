@@ -39,7 +39,7 @@ func compile(origin string) error {
 		return err
 	}
 
-	brasil, err := os.Create(origin + "-status.json")
+	brasil, err := os.Create("docs/" + origin + "-status.json")
 	if err != nil {
 		return err
 	}
