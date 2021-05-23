@@ -13,11 +13,11 @@ async function main(origin) {
     for (const site of sites) {
         const li = document.createElement('li')
         li.className = 'collection-item'
-            
+
         if (site.ipv6) {
-            li.textContent = site.domain + ' ✓'
+            li.textContent = site.domain + ' ✅'
         } else {
-            li.textContent = site.domain + ' ✕'
+            li.textContent = site.domain + ' ❌'
 
         }
 
